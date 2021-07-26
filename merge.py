@@ -23,13 +23,7 @@ def process_jres_file(filename, module_name):
             print(tilemap_level)
             result[k] = tilemap_level
 
-    json.dump(result, open("result.jres", 'w'))
-
-
-
-
-
-
+    json.dump(result, open("result.jres", 'w', encoding='UTF-8'), ensure_ascii=False,  indent=4)
 
 
 if __name__ == '__main__':
